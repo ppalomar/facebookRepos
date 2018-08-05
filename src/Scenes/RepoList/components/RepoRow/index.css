@@ -1,0 +1,16 @@
+.repo-row__container{
+    display: flex;
+    width: 270px;
+    justify-content: space-between;
+    color: #2196F3;
+}
+
+.repo-row__container:hover{
+    background-color: #2196F3;
+    color: #fff;
+    cursor: pointer;
+}
+
+.repo-row__container .repo-name{
+     padding: 10px;
+}

@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RepoRow renders list of repos when loading is false 1`] = `
+<div
+  className="repos-list__container"
+>
+  <div
+    className="left"
+  >
+    <React.Fragment>
+      <RepoRow
+        goDetail={[Function]}
+        key="Pablo"
+        repoName="Pablo"
+      />
+      <RepoRow
+        goDetail={[Function]}
+        key="Cristina"
+        repoName="Cristina"
+      />
+    </React.Fragment>
+  </div>
+  <div
+    className="right"
+  />
+</div>
+`;
+
+exports[`RepoRow renders progress component when loading is true 1`] = `
+<div
+  className="repos-list__container"
+>
+  <div
+    className="left"
+  >
+    <WithStyles(CircularProgress)
+      size={50}
+    />
+  </div>
+  <div
+    className="right"
+  />
+</div>
+`;

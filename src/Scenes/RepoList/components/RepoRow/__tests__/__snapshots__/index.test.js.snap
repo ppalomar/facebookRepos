@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RepoRow renders properly with basic props 1`] = `
+<div
+  className="repo-row__container"
+  onClick={[Function]}
+>
+  <span
+    className="repo-name"
+  >
+    pablo_test
+  </span>
+</div>
+`;

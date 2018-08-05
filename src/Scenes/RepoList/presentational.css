@@ -1,0 +1,16 @@
+.repos-list__container{
+    display: flex;
+}
+
+.repos-list__container .left{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px #2196F3 solid;
+}
+
+.repos-list__container .right{
+    flex: 4;
+}

@@ -1,0 +1,27 @@
+._404__container {
+  text-align: center;
+  margin-top: 5%;
+}
+
+._404__container .first {
+  color: #40b8ef;
+  font-size: 360px;
+  font-weight: 100;
+  line-height: 422px;
+}
+
+._404__container .second {
+  color: #000000;
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 57px;
+}
+
+._404__container .actions {
+  margin-top: 40px;
+  opacity: 0.54;
+}
+
+._404__container .actions a {
+  color: #000;
+}

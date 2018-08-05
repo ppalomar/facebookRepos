@@ -1,0 +1,4 @@
+export const REPOS_FETCH = 'REPOS_FETCH';
+export const REPOS_FETCH_SUCCESS = 'REPOS_FETCH_SUCCESS';
+
+export const REPO_GO_DETAIL = 'REPO_GO_DETAIL';
