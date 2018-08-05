@@ -7,11 +7,11 @@ import { getSortedReposSelector } from './selectors';
 
 import StatelessComponent from './presentational';
 
-const stateToProps = (state, { history }) => ({
+const stateToProps = (state, { history, match }) => ({
   loading: state.Scenes.RepoList.loading,
   history,
   repos: getSortedReposSelector(state),
-  seletedRepo: state.Scenes.RepoList.selectedRepo,
+  seletedRepo: match.params && match.params.repoName,
 });
 
 const dispatchToProps = dispatch => ({

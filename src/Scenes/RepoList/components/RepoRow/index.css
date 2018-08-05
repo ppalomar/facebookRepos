@@ -3,12 +3,13 @@
     width: 270px;
     justify-content: space-between;
     color: #2196F3;
+    cursor: pointer;
 }
 
+.repo-row__container.selected,
 .repo-row__container:hover{
     background-color: #2196F3;
     color: #fff;
-    cursor: pointer;
 }
 
 .repo-row__container .repo-name{

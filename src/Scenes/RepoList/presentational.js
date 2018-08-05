@@ -5,13 +5,13 @@ import RepoRow from './components/RepoRow';
 import RepoDetail from './components/RepoDetail';
 import './presentational.css';
 
-const RepoListStateless = ({ loading, repos, goDetail }) => {
+const RepoListStateless = ({ loading, repos, seletedRepo, goDetail }) => {
   const isEmpty = repos.length === 0;
 
   const list = (
     <Fragment>
       {repos.map(({ name }) => (
-        <RepoRow key={name} repoName={name} goDetail={goDetail} />
+        <RepoRow key={name} repoName={name} seletedRepo={seletedRepo} goDetail={goDetail} />
       ))}
     </Fragment>
   );
