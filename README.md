@@ -21,7 +21,7 @@ Then when `Cypress` console is opened, click in `app.spec.js` inside e2e folder 
 Screenshots:
 
 Main List view:
-![Main List](/screeshots/listView.png?raw=true "Main List")
+![Main List](/screenshots/listView.png?raw=true "Main List")
 
 Repo Detail view:
-![Repo Detail](/screeshots/detailView.png?raw=true "Repo Detail")
+![Repo Detail](/screenshots/detailView.png?raw=true "Repo Detail")
