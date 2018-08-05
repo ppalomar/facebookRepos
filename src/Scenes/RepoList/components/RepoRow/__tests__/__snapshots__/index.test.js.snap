@@ -2,7 +2,7 @@
 
 exports[`RepoRow renders properly with basic props 1`] = `
 <div
-  className="repo-row__container"
+  className="repo-row__container "
   onClick={[Function]}
 >
   <span
