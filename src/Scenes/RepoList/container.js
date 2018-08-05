@@ -7,18 +7,15 @@ import { getSortedReposSelector } from './selectors';
 
 import StatelessComponent from './presentational';
 
-const stateToProps = (state, { history, match }) => ({
+const stateToProps = (state, { history }) => ({
   loading: state.Scenes.RepoList.loading,
   history,
-  match,
   repos: getSortedReposSelector(state),
+  seletedRepo: state.Scenes.RepoList.selectedRepo,
 });
 
 const dispatchToProps = dispatch => ({
-  onLoad: repoName => {
-    dispatch(fetchRepos());
-    if(repoName) dispatch(goRepoDetail(repoName));
-  },
+  onLoad: () => dispatch(fetchRepos()),
   goDetail: repoName => dispatch(goRepoDetail(repoName)),
   onShowMore: since => dispatch(fetchRepos({ since }, true)),
 });
@@ -35,8 +32,7 @@ const mergeProps = (stateProps, dispatchProps) => ({
 
 class ReposList extends Component {
   componentDidMount() {
-    const { repoName } = this.props.match.params;
-    this.props.onLoad(repoName);
+    this.props.onLoad();
   }
 
   render() {

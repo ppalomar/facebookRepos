@@ -1,22 +1,21 @@
 import * as AT from './actionTypes';
 
 export const INITIAL_STATE = {
-  loading: false,
-  repos: [],
+  repoDetail: undefined,
+  contributors: [],
 };
 
 export const reducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
-    case AT.REPOS_FETCH:
+    case AT.REPO_DETAIL_FETCH_SUCCESS:
       return {
         ...state,
-        loading: true,
+        repoDetail: action.repo,
       };
-    case AT.REPOS_FETCH_SUCCESS:
+    case AT.CONTRIBUTORS_FETCH_SUCCESS:
       return {
         ...state,
-        loading: false,
-        repos: action.repos,
+        contributors: action.contributors,
       };
     default:
       return state;

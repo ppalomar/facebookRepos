@@ -20,7 +20,7 @@ describe('UserList', () => {
       const fakeRepo = 'whatever';
       const goRepoDetail = actions.goRepoDetail(fakeRepo);
       expect(goRepoDetail).toHaveProperty('type', AT.REPO_GO_DETAIL);
-      expect(goRepoDetail).toHaveProperty('repo', fakeRepo);
+      expect(goRepoDetail).toHaveProperty('repoName', fakeRepo);
     });
   });
 
@@ -44,15 +44,6 @@ describe('UserList', () => {
         ...INITIAL_STATE,
         loading: false,
         repos: [1, 2, 3],
-      });
-    });
-
-    it('handle REPO_GO_DETAIL', () => {
-      const fakeRepo = 'Pablo';
-      const goRepoDetail = actions.goRepoDetail(fakeRepo);
-      expect(reducer(undefined, goRepoDetail)).toEqual({
-        ...INITIAL_STATE,
-        selectedRepo: fakeRepo,
       });
     });
   });

@@ -6,4 +6,6 @@ const getOrg = org => !org ? DEFAULT_ORG : org;
 
 export const getRepos = (org = undefined) => axios.get(`/orgs/${getOrg(org)}/repos`);
 
-export const getRepoDetail = (params, org = undefined) => axios.get(`/repos/${getOrg(org)}/${params.repoName}`);
+export const getRepoDetail = (repoName, org = undefined) => axios.get(`/repos/${getOrg(org)}/${repoName}`);
+
+export const getContributors = (repoName, org = undefined) => axios.get(`/repos/${getOrg(org)}/${repoName}/contributors`);

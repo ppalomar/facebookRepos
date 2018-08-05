@@ -1,0 +1,27 @@
+.repo-detail__container{
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+}
+
+.repo-detail__empty{
+    display: flex;
+    margin-top: 30%;
+    opacity: .75;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.repo-detail__container div,
+.repo-detail__container button{
+    margin-top: 10px;
+}
+
+.repo-detail__container .contributor{
+    display: flex;
+}
+
+.repo-detail__container .contributor span{
+    margin: 20px 0 0 20px;
+}

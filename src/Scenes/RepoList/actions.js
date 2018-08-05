@@ -17,9 +17,9 @@ export function fetchReposFailed(error) {
   console.error(error);
 }
 
-export function goRepoDetail(repo) {
+export function goRepoDetail(repoName) {
   return {
     type: AT.REPO_GO_DETAIL,
-    repo,
+    repoName,
   };
 }

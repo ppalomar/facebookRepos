@@ -22,7 +22,9 @@ exports[`RepoRow renders list of repos when loading is false 1`] = `
   </div>
   <div
     className="right"
-  />
+  >
+    <withRouter(Connect(RepoDetail)) />
+  </div>
 </div>
 `;
 
@@ -39,6 +41,8 @@ exports[`RepoRow renders progress component when loading is true 1`] = `
   </div>
   <div
     className="right"
-  />
+  >
+    <withRouter(Connect(RepoDetail)) />
+  </div>
 </div>
 `;

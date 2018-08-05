@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import CircularProgress from '@material-ui/core/CircularProgress';
 
 import RepoRow from './components/RepoRow';
-
+import RepoDetail from './components/RepoDetail';
 import './presentational.css';
 
 const RepoListStateless = ({ loading, repos, goDetail }) => {
@@ -22,6 +22,7 @@ const RepoListStateless = ({ loading, repos, goDetail }) => {
         {loading && isEmpty ? <CircularProgress size={50} /> : list}
       </div>
       <div className="right">
+        <RepoDetail />
       </div>
     </div>
   );
