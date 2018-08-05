@@ -3,14 +3,15 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
 import { fetchRepos, goRepoDetail } from './actions';
+import { getSortedReposSelector } from './selectors';
 
 import StatelessComponent from './presentational';
 
-const stateToProps = ({ Scenes }, { history, match }) => ({
-  loading: Scenes.RepoList.loading,
+const stateToProps = (state, { history, match }) => ({
+  loading: state.Scenes.RepoList.loading,
   history,
   match,
-  repos: Scenes.RepoList.repos
+  repos: getSortedReposSelector(state),
 });
 
 const dispatchToProps = dispatch => ({
